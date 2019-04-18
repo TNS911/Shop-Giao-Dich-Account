@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-123961355-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <meta name="title" content="" />
+    <link rel="shortcut icon" href="~/img/icon_tab.ico">
+    <meta name="description" content="Shop Acc LMHT, Liên Quân, Shop Cung Cấp Dịch Vụ Acc LMHT, Liên Quân" />
+    <meta name="keywords" content="Shop Acc LMHT, Liên Quân, Shop Cung Cấp Dịch Vụ Acc LMHT, Liên Quân" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta property="og:url" content="https://shoplienminh360.vn/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" ShopLienMinh360.VN Shop Acc LMHT, Liên Quân, Shop Cung Cấp Dịch Vụ Acc LMHT, Liên Quân Giá Rẻ">
+    <meta property="og:description" content="https://shoplienminh360.vn/">
+    <meta property="og:image" content="https://shoplienminh360.vn/public/img/banner.png">
+    <meta property="og:site_name" content="ShopLienMinh360.VN">
+    <title> ShopLienMinh360.VN Shop Acc LMHT, Shop Cung Cấp Dịch Vụ Acc LMHT, Liên Quân Giá Rẻ</title>
+
+    <!-- CSS -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/reset.css" rel="stylesheet" />
+    <link href="~/Content/css/swiper.min.css" rel="stylesheet" />
+    <link href="~/Content/css/sweetalert.css" rel="stylesheet" />
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="~/Content/js/jquery-1.11.2.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/swiper.min.js"></script>
+    <script src="~/Content/js/sweetalert.min.js"></script>
+    <script src="~/Content/js/garenaweb-utils.min.js"></script>
+</head>
+<body>
+    <div class="sl-header">
+        <div class="container">
+            <span class="sl-icmenu"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
+            <a class="sl-logo" href="/" title="Trang chủ"><img src="https://shoplienminh360.vn/public/img/logo.png" alt=""></a>
+            <ul class="sl-menu clearfix">
+                <li><a href="https://shoplienminh360.vn/giao-dich-gan-day" title="GIAO DỊCH GẦN ĐÂY">GIAO DỊCH GẦN ĐÂY</a></li>
+                <li><a href="https://shoplienminh360.vn/bao-hanh-acc" title="BẢO HÀNH ACC" style="cursor: pointer;">BẢO HÀNH ACC</a></li>
+                <li>
+                    <a onclick="loginWithFacebook('nap-the');"
+                       title="NẠP TIỀN" style="cursor: pointer;">NẠP TIỀN</a>
+                </li>
+                <li><a href="https://shoplienminh360.vn/thong-tin-shop" title="THÔNG TIN">CÀY THUÊ</a></li>
+            </ul>
+            <ul onclick="loginWithFacebook();" class="sl-logreg clearfix">
+                <li><a class="sl-loglink" href="#" title="Đăng nhập">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sl-hdtop">
+        <div class="container">
+            <div class="sl-boxs">
+                <div class="sl-row clearfix">
+                    <div class="sl-col sl-col1">
+                        @Html.Partial("TopCard")
+                    </div>
+                    <div class="sl-col sl-col2">
+                        <div class="sl-hdcbox">
+                            <div class="swiper-container slhdbner swiper-container-horizontal">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide-active"><img src="https://shoplienminh360.vn/public/img/banner.jpg"></div>
+                                    <div class="swiper-slide swiper-slide-active"><img src="https://shoplienminh360.vn/public/img/banner.jpg"></div>
+                                    <div class="swiper-slide swiper-slide-active"><img src="https://shoplienminh360.vn/public/img/banner.jpg"></div>
+                                    @*<iframe height="400" src="https://www.youtube.com/embed/tMUf3CmNwr0" width="100%"></iframe>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/Content/js/bootstrap3-typeahead.min.js"></script>
+    <script src="~/Content/js/filter.js"></script>
+    @RenderBody()
+    <script src="~/Content/js/_accountSkin.js"></script>
+    <script type="text/javascript"></script>
+    <script src="~/Content/js/custom.js"></script>
+
+
+    @*<div id="fb-root"></div>
+        <p class="hidden-xs" style="position: fixed;right:100px;bottom: 30px;padding: 10px;background: #4267b2;font-size: large;border-radius: 10px;z-index: 250;color: #ffffff;">Chat Với Admin <i class="glyphicon glyphicon-hand-right"></i></p>*@
+    <!-- Your customer chat code -->
+    @*<div class="fb-customerchat" attribution="setup_tool" page_id="178340596104093" theme_color="#4267b2"></div>*@
+
+    @*<div class="float-menu visible-lg-block hidden-xs">
+            <a href="https://shoplienminh360.vn/?loai=lien-quan" class="float-btn" style="background: #b8312f;"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> ACC LIÊN QUÂN</a>
+            <a href="https://m.me/178340596104093" target="_blank" class="float-btn" style="background: #3b5998;"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> 0906.807.693</a>
+            <a href="https://shoplienminh360.vn/?rank=bach-kim" class="float-btn" style="background: #FF3300;"><i class="glyphicon glyphicon-star" aria-hidden="true"></i> ACC BẠCH KIM</a>
+            <a href="https://shoplienminh360.vn/?rank=kim-cuong" class="float-btn" style="background: #00CC00;"><i class="glyphicon glyphicon-heart" aria-hidden="true"></i> ACC KIM CƯƠNG</a>
+        </div>*@
+
+
+    @*<a href="https://shoplienminh360.vn/?sapxep=nhieu-skin" target="_blank"><p class="hidden-xs" style="position: fixed;right: 10px;bottom: 340px;padding: 5px;background: #FDB603;font-size: large;border-radius: 10px;z-index: 250;color: #ffffff;"><img src="https://shoplienminh360.vn/public/img/LMHT.png"> Acc Nhiều Skin Ngon </p></a>
+
+        <a href="https://shoplienminh360.vn/?loai=lien-minh-25k" target="_blank"><p><p class="hidden-xs" style="position: fixed;right: 10px;bottom: 295px;padding: 5px;background: #b8312f;font-size: large;border-radius: 10px;z-index: 250;color: #ffffff;"><img src="https://shoplienminh360.vn/public/img/LMHT.png"> Thử Vận May Tìm Acc VIP </p></a>*@
+
+    <div class="sl-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="sl-ftadds">
+                        <p>Hoạt động: 24/24</p>
+                        <p>Thời gian làm việc: 8h-23h các ngày trong tuần</p>
+                        <p>© 2018, Copyright by Shop Liên Minh 360</p>
+                    </div>
+
+                    <div class="sa-fthotline">
+                        <div class="sa-ftarow clearfix">
+                            <div class="sa-ftacol sa-fthnum">
+                                <p><a href="https://m.me/178340596104093">Liên Hệ Admin</a></p>
+                                <p><a target="_blank" href="//fb.com/tangocson911">TNS911 (fb.com/tangocson911)</a></p>
+                            </div>
+                            <div class="sa-ftacol sa-fthwork">
+                                Thời gian làm việc: <strong>8h - 22h</strong> các ngày trong tuần
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <ul class="sl-ftviews">
+                        <li>
+                            <span class="sl-fti1"><img src="~/img/b1.png"></span>
+                            <p><strong>21253</strong> Acc đã bán</p>
+                        </li>
+                        <li>
+                            <span class="sl-fti2"><img src="~/img/b2.png"></span>
+                            <p><strong>17281</strong> Thành viên</p>
+                        </li>
+                        <li>
+                            <span class="sl-fti3"><img src="~/img/b3.png"></span>
+                            <p><strong class="vistor-total">5</strong> Trực tuyến</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
