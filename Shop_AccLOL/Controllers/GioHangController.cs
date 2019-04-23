@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Shop_AccLOL.Controllers
 {
-    public class HomeController : Controller
+    public class GioHangController : Controller
     {
-        // GET: Home
+        // GET: GioHang
         public ActionResult Index()
         {
             return View();

@@ -126,9 +126,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaoHanhAccController.cs" />
     <Compile Include="Controllers\CayThueController.cs" />
+    <Compile Include="Controllers\GioHangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LichSuGiaoDichController.cs" />
+    <Compile Include="Controllers\TopCardPartialController.cs" />
     <Compile Include="Controllers\XemChiTietController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -158,10 +161,28 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\acc\25401-1.jpg" />
+    <Content Include="img\acc\25401-2.jpg" />
+    <Content Include="img\acc\25401-3.jpg" />
+    <Content Include="img\acc\25401-4.jpg" />
+    <Content Include="img\acc\25401-5.jpg" />
+    <Content Include="img\acc\25409-1.jpg" />
+    <Content Include="img\acc\Jinx.png" />
+    <Content Include="img\acc\Karma.png" />
+    <Content Include="img\acc\Master Yi.png" />
+    <Content Include="img\acc\platinum.png" />
     <Content Include="img\b1.png" />
     <Content Include="img\b2.png" />
     <Content Include="img\b3.png" />
+    <Content Include="img\banner.jpg" />
+    <Content Include="img\bgbody.jpg" />
+    <Content Include="img\bgbtn.png" />
+    <Content Include="img\bgdn.png" />
+    <Content Include="img\bghd.jpg" />
+    <Content Include="img\btn-next.png" />
+    <Content Include="img\btn-prev.png" />
     <Content Include="img\icon_tab.ico" />
+    <Content Include="img\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -186,15 +207,17 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LayoutClient.cshtml" />
+    <Content Include="Views\CayThue\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\TopCard.cshtml" />
+    <Content Include="Views\LichSuGiaoDich\Index.cshtml" />
+    <Content Include="Views\TopCardPartial\TopCard.cshtml" />
+    <Content Include="Views\BaoHanhAcc\Index.cshtml" />
+    <Content Include="Views\XemChiTiet\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\CayThue\" />
-    <Folder Include="Views\LichSuGiaoDich\" />
-    <Folder Include="Views\XemChiTiet\" />
+    <Folder Include="Views\GioHang\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

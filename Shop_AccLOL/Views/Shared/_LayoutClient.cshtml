@@ -25,7 +25,7 @@
     <meta property="og:description" content="https://shoplienminh360.vn/">
     <meta property="og:image" content="https://shoplienminh360.vn/public/img/banner.png">
     <meta property="og:site_name" content="ShopLienMinh360.VN">
-    <title> ShopLienMinh360.VN Shop Acc LMHT, Shop Cung Cấp Dịch Vụ Acc LMHT, Liên Quân Giá Rẻ</title>
+    <title> Website giao dịch account</title>
 
     <!-- CSS -->
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
@@ -44,15 +44,12 @@
     <div class="sl-header">
         <div class="container">
             <span class="sl-icmenu"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
-            <a class="sl-logo" href="/" title="Trang chủ"><img src="https://shoplienminh360.vn/public/img/logo.png" alt=""></a>
+            <div class="sl-logo" style="" title="Trang chủ"><img src="~/img/logo.png" /></div>
             <ul class="sl-menu clearfix">
-                <li><a href="https://shoplienminh360.vn/giao-dich-gan-day" title="GIAO DỊCH GẦN ĐÂY">GIAO DỊCH GẦN ĐÂY</a></li>
-                <li><a href="https://shoplienminh360.vn/bao-hanh-acc" title="BẢO HÀNH ACC" style="cursor: pointer;">BẢO HÀNH ACC</a></li>
-                <li>
-                    <a onclick="loginWithFacebook('nap-the');"
-                       title="NẠP TIỀN" style="cursor: pointer;">NẠP TIỀN</a>
-                </li>
-                <li><a href="https://shoplienminh360.vn/thong-tin-shop" title="THÔNG TIN">CÀY THUÊ</a></li>
+                <li>@Html.ActionLink("TRANG CHỦ", "Index", "Home")</li>
+                <li>@Html.ActionLink("GIAO DỊCH GẦN ĐÂY", "Index", "LichSuGiaoDich")</li>
+                <li>@Html.ActionLink("CÀY THUÊ", "Index", "CayThue")</li>
+                <li>@Html.ActionLink("BẢO HÀNH", "Index", "BaoHanhAcc")</li>
             </ul>
             <ul onclick="loginWithFacebook();" class="sl-logreg clearfix">
                 <li><a class="sl-loglink" href="#" title="Đăng nhập">Đăng nhập</a></li>
@@ -65,16 +62,15 @@
             <div class="sl-boxs">
                 <div class="sl-row clearfix">
                     <div class="sl-col sl-col1">
-                        @Html.Partial("TopCard")
+                        @Html.Action("TopCard", "TopCardPartial")
                     </div>
                     <div class="sl-col sl-col2">
                         <div class="sl-hdcbox">
                             <div class="swiper-container slhdbner swiper-container-horizontal">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide swiper-slide-active"><img src="https://shoplienminh360.vn/public/img/banner.jpg"></div>
-                                    <div class="swiper-slide swiper-slide-active"><img src="https://shoplienminh360.vn/public/img/banner.jpg"></div>
-                                    <div class="swiper-slide swiper-slide-active"><img src="https://shoplienminh360.vn/public/img/banner.jpg"></div>
-                                    @*<iframe height="400" src="https://www.youtube.com/embed/tMUf3CmNwr0" width="100%"></iframe>*@
+                                    <div class="swiper-slide swiper-slide-active"><img src="~/img/banner.jpg"></div>
+                                    <div class="swiper-slide swiper-slide-active"><img src="~/img/banner.jpg"></div>
+                                    <div class="swiper-slide swiper-slide-active"><img src="~/img/banner.jpg"></div>
                                 </div>
                             </div>
                         </div>
@@ -86,28 +82,119 @@
 
     <script src="~/Content/js/bootstrap3-typeahead.min.js"></script>
     <script src="~/Content/js/filter.js"></script>
-    @RenderBody()
     <script src="~/Content/js/_accountSkin.js"></script>
     <script type="text/javascript"></script>
     <script src="~/Content/js/custom.js"></script>
 
+    <!-- Search -->
+    <div class="sl-search">
+        <div class="container">
+            <div class="sl-sebox">
+                <div class="sl-row clearfix">
+                    <div class="sl-col col-md-6 col-xs-12">
+                        <h4 class="sl-htit sl-ht3">CHỌN GAME</h4>
+                        <div class="swiper-container slchgame swiper-container-horizontal">
+                            <div class="swiper-wrapper">
+                                <div data-type="wheel" class="swiper-slide" style="width: 106px; margin-right: 20px;">
+                                    <a href="/" title="Vòng quay may mắn">
+                                        <span><img src="https://shoplienminh360.vn/public/img/icon-lucky-draw.png" alt="Vòng quay may mắn"></span>
+                                        <h3>Vòng quay may mắn</h3>
+                                    </a>
+                                </div>
+                                <div data-type="" class="swiper-slide active" style="width: 106px; margin-right: 20px;">
+                                    <a href="/" title="Liên minh">
+                                        <span><img src="https://shoplienminh360.vn/public/img/LMHT.png" alt="Liên minh"></span>
+                                        <h3>Liên minh</h3>
+                                    </a>
+                                </div>
+                                <div data-type="lien-quan" class="swiper-slide" style="width: 106px; margin-right: 20px;">
+                                    <a href="/" title="Liên quân">
+                                        <span><img src="https://shoplienminh360.vn/public/img/LQ.png" alt="Liên quân"></span>
+                                        <h3>Liên quân</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar" style="display: none;">
+                                <div class="swiper-scrollbar-drag" style="width: 0px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl-col col-md-6 col-xs-12 filter">
+                        <h4 class="sl-htit sl-ht3">CHỌN THUỘC TÍNH LỌC</h4>
+                        <form lpformnum="1">
+                            <ul class="sl-seauls clearfix">
+                                <li>
+                                    <select class="form-control property-filter" data-filter="tim-theo-rank">
+                                        <option value="">Tìm theo rank</option>
+                                        <option value="chua">Chưa rank</option>
+                                        <option value="dong">Rank Đồng</option>
+                                        <option value="bac">Rank Bạc</option>
+                                        <option value="vang">Rank Vàng</option>
+                                        <option value="bach-kim">Rank Bạch Kim</option>
+                                        <option value="kim-cuong">Rank Kim Cương</option>
+                                        <option value="cao-thu">Rank Cao Thủ</option>
+                                        <option value="thach-dau">Rank Thách Đấu</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select class="form-control property-filter" data-filter="tim-theo-gia">
+                                        <option value="">Tìm theo giá</option>
+                                        <option value="10k">Acc 10k</option>
+                                        <option value="20k">Acc 20k</option>
+                                        <option value="30k">Acc 30k</option>
+                                        <option value="40k">Acc 40k</option>
+                                        <option value="50k">Acc 50k</option>
+                                        <option value="50k-100k">Acc 50k - 100k</option>
+                                        <option value="100k-500k">Acc 100k - 500k</option>
+                                        <option value="500k-2000k">Acc 500k - 2000k</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select class="form-control property-filter" data-filter="tim-theo-khung">
+                                        <option value="">Tìm theo khung</option>
+                                        <option value="chua">Không khung</option>
+                                        <option value="bac">Khung Bạc</option>
+                                        <option value="vang">Khung Vàng</option>
+                                        <option value="bach-kim">Khung Bạch Kim</option>
+                                        <option value="kim-cuong">Khung Kim Cương</option>
+                                        <option value="cao-thu">Khung Cao Thủ</option>
+                                        <option value="thach-dau">Khung Thách Đấu</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select class="form-control property-filter" data-filter="sap-xep-theo">
+                                        <option value="">Sắp xếp theo</option>
+                                        <option value="nhieu-tuong">Nhiều tướng</option>
+                                        <option value="nhieu-skin">Nhiều trang phục</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="text" class="form-control property-filter" placeholder="Tìm Theo Trang Phục" data-filter="tim-theo-trang-phuc">
+                                </li>
+                                <li>
+                                    <input type="text" class="form-control property-filter" placeholder="Tìm Theo Tướng" data-filter="tim-theo-tuong">
+                                </li>
+                                <li>
+                                    <input type="text" class="form-control property-filter" placeholder="Tìm Theo Thông Thạo" data-filter="tim-theo-thong-thao">
+                                </li>
+                            </ul>
+                            <ul class="sl-sebtns">
+                                <li><button class="sl-sebt1 btn-filter" type="button">TÌM KIẾM</button></li>
+                                <li><button class="sl-sebt2" type="reset">HỦY BỎ</button></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    @*<div id="fb-root"></div>
-        <p class="hidden-xs" style="position: fixed;right:100px;bottom: 30px;padding: 10px;background: #4267b2;font-size: large;border-radius: 10px;z-index: 250;color: #ffffff;">Chat Với Admin <i class="glyphicon glyphicon-hand-right"></i></p>*@
-    <!-- Your customer chat code -->
-    @*<div class="fb-customerchat" attribution="setup_tool" page_id="178340596104093" theme_color="#4267b2"></div>*@
+    <div class="container">
+        <div class="sllpbox">
+            @RenderBody()
+        </div>
+    </div>
 
-    @*<div class="float-menu visible-lg-block hidden-xs">
-            <a href="https://shoplienminh360.vn/?loai=lien-quan" class="float-btn" style="background: #b8312f;"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> ACC LIÊN QUÂN</a>
-            <a href="https://m.me/178340596104093" target="_blank" class="float-btn" style="background: #3b5998;"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> 0906.807.693</a>
-            <a href="https://shoplienminh360.vn/?rank=bach-kim" class="float-btn" style="background: #FF3300;"><i class="glyphicon glyphicon-star" aria-hidden="true"></i> ACC BẠCH KIM</a>
-            <a href="https://shoplienminh360.vn/?rank=kim-cuong" class="float-btn" style="background: #00CC00;"><i class="glyphicon glyphicon-heart" aria-hidden="true"></i> ACC KIM CƯƠNG</a>
-        </div>*@
-
-
-    @*<a href="https://shoplienminh360.vn/?sapxep=nhieu-skin" target="_blank"><p class="hidden-xs" style="position: fixed;right: 10px;bottom: 340px;padding: 5px;background: #FDB603;font-size: large;border-radius: 10px;z-index: 250;color: #ffffff;"><img src="https://shoplienminh360.vn/public/img/LMHT.png"> Acc Nhiều Skin Ngon </p></a>
-
-        <a href="https://shoplienminh360.vn/?loai=lien-minh-25k" target="_blank"><p><p class="hidden-xs" style="position: fixed;right: 10px;bottom: 295px;padding: 5px;background: #b8312f;font-size: large;border-radius: 10px;z-index: 250;color: #ffffff;"><img src="https://shoplienminh360.vn/public/img/LMHT.png"> Thử Vận May Tìm Acc VIP </p></a>*@
 
     <div class="sl-footer">
         <div class="container">
@@ -122,7 +209,7 @@
                     <div class="sa-fthotline">
                         <div class="sa-ftarow clearfix">
                             <div class="sa-ftacol sa-fthnum">
-                                <p><a href="https://m.me/178340596104093">Liên Hệ Admin</a></p>
+                                <p><a href="">Liên Hệ Admin</a></p>
                                 <p><a target="_blank" href="//fb.com/tangocson911">TNS911 (fb.com/tangocson911)</a></p>
                             </div>
                             <div class="sa-ftacol sa-fthwork">

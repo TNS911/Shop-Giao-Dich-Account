@@ -13,7 +13,7 @@ body {
     line-height: 1.42857143;
     color: #939393;
     overflow-x: hidden;
-    background: url(../img/bgbody.jpg) center top no-repeat #0f1113;
+    background: url('../../img/bgbody.jpg') center top no-repeat #0f1113;
     -webkit-background-size: 100% auto;
     background-size: 100% auto
 }
@@ -38,7 +38,7 @@ a, a:active, a:focus, a:hover {
 }
 .sl-header {
     height: 85px;
-    background: url(../img/bghd.jpg) center #000
+    background: url('../../img/bghd.jpg');
 }
 .sl-logo {
     display: inline-block;
@@ -92,7 +92,7 @@ a, a:active, a:focus, a:hover {
     right: 15px;
     width: 169px;
     height: 35px;
-    background: url(../img/bgdn.png) center no-repeat
+    background: url('../../img/bgdn.png') center no-repeat ;
 }
 .sl-logreg>li {
     display: inline-block
@@ -224,12 +224,12 @@ a, a:active, a:focus, a:hover {
     cursor: pointer
 }
 .fsbn-n {
-    background: url(../img/btn-next.png) center no-repeat;
+    background: url('../../img/btn-next.png') center no-repeat;
     right: 10px;
     left: auto
 }
 .fsbn-p {
-    background: url(../img/btn-prev.png) center no-repeat;
+    background: url('../../img/btn-prev.png') center no-repeat;
     left: 10px;
     right: auto
 }
@@ -518,7 +518,7 @@ img.sl-champMaster {
     font-size: 18px;
     border: none;
     outline: 0;
-    background: url(../img/bgbtn.png) center no-repeat
+    background: url('../../img/bgbtn.png') center no-repeat ;
 }
 .sl-paging ul li {
     display: inline-block;
@@ -793,7 +793,7 @@ img.sl-champMaster {
     text-align: center
 }
 .sa-ttac-btn1 {
-    background: url(../img/bgbtn.png) center no-repeat
+    background: url('../../img/bgbtn.png') center no-repeat ;
 }
 .sa-ttac-btn2 {
     background: url(../img/bndc.png) center no-repeat

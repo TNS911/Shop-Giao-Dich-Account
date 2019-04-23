@@ -1,0 +1,136 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutClient.cshtml";
+}
+
+@*<div class="sl-dtprod">*@
+    @*<div class="container">
+        <div class="sl-dtprmain">*@
+            <div class="sa-lsnmain clearfix">
+                <ul class="sa-brea">
+                    <li>Trang Chủ</li>
+                    <li class="active">
+                        <a href="javascript:;">Acc LOL #25409</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="sa-ttactit clearfix">
+                            <h1 class="sa-ttacc-tit">
+                                Acc LOL #25409                                 - Rank: Chưa - Khung: Chưa
+                            </h1>
+                        </div>
+                    </div>
+
+
+                </div>
+                <ul class="sa-ttacc-tabs clearfix">
+                    <li class="active"><a href="#tab-info" data-toggle="tab">THÔNG TIN</a></li>
+
+                    <li>
+                        <a href="#tab-champ" data-toggle="tab">
+                            DANH SÁCH TƯỚNG
+                            <span>136</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-skin" data-toggle="tab">
+                            TRANG PHỤC
+                            <span>82</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-gem" data-toggle="tab">
+                            NGỌC HỖ TRỢ
+                            <span>5</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="sa-ttacc-tcont tab-content">
+                    <div class="tab-pane fade in active text-center" id="tab-info">
+                        <div class="tab-content-detail">
+                            <div style="margin-bottom: 10px;"><img src="~/img/acc/25401-1.jpg"></div>
+                            <div style="margin-bottom: 10px;"><img src="~/img/acc/25401-2.jpg"></div>
+                            <div style="margin-bottom: 10px;"><img src="~/img/acc/25401-3.jpg"></div>
+                            <div style="margin-bottom: 10px;"><img src="~/img/acc/25401-4.jpg"></div>
+                            <div style="margin-bottom: 10px;"><img src="~/img/acc/25401-5.jpg"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade text-center" id="tab-skin">
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-md-4"> </div>
+                            <div class="col-md-4"> </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <div class="input-group-addon">Lọc theo Skin</div>
+                                    <input class="form-control " id="searchSkins" placeholder="Tìm tên Skin">
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="l-i-c-acc centered">
+                            <span class="clothes-bg-top"></span>
+
+                            <div class="ui equal width champion card skin skin-effect">
+                                <div class="image"><img src="https://shoplienminh360.vn/public/img/skin/championsskin_104014.jpg"></div>
+                                <div class="champion-card-content">Graves Vinh Quang</div>
+                            </div>
+                            <div class="ui equal width champion card skin skin-effect">
+                                <div class="image"><img src="https://shoplienminh360.vn/public/img/skin/championsskin_117003.jpg"></div>
+                                <div class="champion-card-content">Lulu Luyện Rồng</div>
+                            </div>
+                            <span class="clothes-bg-bottom"></span>
+                        </ul>
+
+                        <script type="text/javascript">
+                            document.getElementById("searchSkins")
+                                .oninput = function () {
+                                    var matcher = new RegExp(document.getElementById("searchSkins")
+                                        .value, "gi");
+                                    for (var i = 0; i < document.getElementsByClassName("ui equal width skin card")
+                                        .length; i++) {
+                                        if (matcher.test(document.getElementsByClassName("champion-card-content")[i].innerHTML)) {
+                                            document.getElementsByClassName("ui equal width skin card")[i].style.display = "inline-block";
+                                        }
+                                        else {
+                                            document.getElementsByClassName("ui equal width skin card")[i].style.display = "none";
+                                        }
+
+                                    }
+                                }
+                        </script>
+                        <div class="ui equal width champion card skin">
+                            <div class="image"><img src="https://shoplienminh360.vn/public/img/skin/championsskin_1008.jpg"></div>
+                            <div class="champion-card-content">Annie Gấu Trúc</div>
+                        </div>
+                        <div class="ui equal width champion card skin">
+                            <div class="image"><img src="https://shoplienminh360.vn/public/img/skin/championsskin_2001.jpg"></div>
+                            <div class="champion-card-content">Olaf Kẻ Phản Diện</div>
+                        </div>
+                        <div class="ui equal width champion card skin">
+                            <div class="image"><img src="https://shoplienminh360.vn/public/img/skin/championsskin_2003.jpg"></div>
+                            <div class="champion-card-content">Brolaf</div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade text-center" id="tab-champ">
+ 
+                        <div class="ui equal width champion card">
+                            <div class="image"><img src="https://shoplienminh360.vn/public/img/champion/Pyke.png"></div>
+                            <div class="champion-card-content">Pyke</div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade text-center" id="tab-gem">
+                        <div class="tab-content-detail">
+                            <div style="margin-bottom: 10px;"><img src="https://shoplienminh360.vn/public/files/gem/25409-1.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        @*</div>
+    </div>*@
+@*</div>*@

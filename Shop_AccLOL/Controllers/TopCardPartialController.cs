@@ -6,12 +6,18 @@ using System.Web.Mvc;
 
 namespace Shop_AccLOL.Controllers
 {
-    public class HomeController : Controller
+    public class TopCardPartialController : Controller
     {
-        // GET: Home
+        // GET: TopCardPartial
         public ActionResult Index()
         {
             return View();
         }
+
+        public PartialViewResult TopCard()
+        {
+            return PartialView();
+        }
+
     }
 }
